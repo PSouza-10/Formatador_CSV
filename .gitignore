@@ -1,2 +1,6 @@
 env
 __*__
+*.zip
+duplicates/*
+outputs/*
+samples/*
