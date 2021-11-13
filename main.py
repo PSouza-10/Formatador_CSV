@@ -47,11 +47,7 @@ if config.ID_COL:
     duplicates = duplicates.set_index(config.ID_COL)
 removed = 0
 
-
-
 inserted_identifiers = []
-
-
 
 for ID in df.index:
     row_data = df.loc[[ID]]
@@ -65,6 +61,7 @@ for ID in df.index:
         duplicates = duplicates.append(row_data)
         removed+=1
 
+print(f'{removed} linhas duplicadas foram removidas')
 
 other_cols = filtered_df.copy()
 
